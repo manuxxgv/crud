@@ -1,0 +1,29 @@
+            <form class="form" [formGroup]="userData">
+                <p class="title"> FORM CIS</p>
+                    <p class="message">Registro para darse de alta los nuevos integrantes del capitulo estudiantil de ISC </p>
+                        <div class="flex">
+                        <label>
+                            <input class="input" type="text" placeholder="Nombre" required="" formControlName="nombre">
+                        </label>
+                
+                        <label>
+                            <input class="input" type="text" placeholder="Apellido" required="" formControlName="apellidos">
+                        </label>
+                    </div>  
+                            
+                    <label>
+                        <input class="input" type="email" placeholder="Correo Institutucional" required="" formControlName="correo">
+                    </label> 
+                        
+                    <label>
+                        <input class="input" type="password" placeholder="Contraseña" required="" formControlName="password">
+                    </label>
+                    
+                    <label>
+                        <input class="input" type="password" placeholder="Repite tu contraseña" required="" formControlName="passwordconfirm">
+                    </label>
+                    
+                    <button class="submit" (click)="guardarDatos()">Registrar</button>
+                    <p class="signin">Already have an acount ? <a href="#">Signin</a> </p>
+                </form>
+        
